@@ -1,8 +1,10 @@
+#!/bin/bash
 
 if [ "$EUID" -ne 0 ]
 	then echo "Please run as root"
 	exit
 fi
 
-chmod +x winstall.sh
-mv ./winstall.sh /bin/bash/winstall
+chmod a+rx winstall.sh
+#mv ./winstall.sh /usr/local/bin
+sudo cp ./winstall.sh /usr/local/bin/winstall
