@@ -1,11 +1,14 @@
-# winstall
-A linux installer
+# Winstall
 
-Use install.sh to install the script.
+A script to download and install program dependencies 
 
-Available features
+## Instalation
 
-winstaller make PROGRAM to download all .deb files of dependencies to a folder.
+clone the repository and run `sudo install.sh` to install the script.
 
-To install from a .win folder, navigate to the folder add sudo winstaller install to install it.
+## Features
+
+use `winstaller make program_name` to download all .deb files of dependencies to a folder .win folder in the current directory.
+
+To install a program from a .win folder, navigate to the folder and use `sudo winstaller install` to install it.
 
